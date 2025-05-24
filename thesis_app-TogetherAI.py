@@ -26,8 +26,9 @@ logging.basicConfig(
     ]
 )
 
-# Initialize OpenRouter client
-client = Together(api_key="58ff5e76928a9cdc29e9dfcce0d4b8086178282df9850070cff41b7cfad43231")
+# Initialize TogetherAI client
+api_key = st.secrets["TOGETHER_API_KEY"]
+client = Together(api_key=api_key)
 
 # Configure the page
 st.set_page_config(
