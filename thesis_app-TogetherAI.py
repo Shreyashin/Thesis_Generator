@@ -61,13 +61,8 @@ methodology = st.sidebar.text_area(
     help="Describe your research methodology"
 )
 
-model_name = st.sidebar.selectbox(
-    "Select Model",
-    [
-        "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free"
-    ],
-    index=0
-)
+# Hardcoded model name
+model_name = "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free"
 
 # Thesis sections
 sections = [
