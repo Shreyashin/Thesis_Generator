@@ -5,7 +5,7 @@ from datetime import datetime
 import random
 import logging
 import os
-from together
+import together
 from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_LINE_SPACING
