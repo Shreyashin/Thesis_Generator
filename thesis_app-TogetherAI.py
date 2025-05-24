@@ -5,7 +5,7 @@ from datetime import datetime
 import random
 import logging
 import os
-from together import Together
+from together
 from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_LINE_SPACING
@@ -27,7 +27,7 @@ logging.basicConfig(
 )
 
 # Initialize OpenRouter client
-client = client = Together(api_key="58ff5e76928a9cdc29e9dfcce0d4b8086178282df9850070cff41b7cfad43231")
+client = client = together.Together(api_key="58ff5e76928a9cdc29e9dfcce0d4b8086178282df9850070cff41b7cfad43231")
 
 # Configure the page
 st.set_page_config(
