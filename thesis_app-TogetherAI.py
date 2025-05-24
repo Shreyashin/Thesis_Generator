@@ -122,7 +122,6 @@ def get_section_content(model, messages, max_retries=3, base_delay=120):
         try:
             logging.info(f"Attempting API call with model: {model} (Attempt {attempt + 1}/{max_retries})")
             completion = client.chat.completions.create(
-                extra_body={},
                 model=model,
                 messages=messages
             )
