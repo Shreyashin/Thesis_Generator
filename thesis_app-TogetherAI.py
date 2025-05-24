@@ -340,6 +340,17 @@ info@writerighthesis.in
 *Proudly Made in India*
 """)
 
+# Hide "View source on GitHub" footer
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # Add log file download button in the sidebar at the bottom
 st.sidebar.markdown("---")
 st.sidebar.subheader("Logs")
